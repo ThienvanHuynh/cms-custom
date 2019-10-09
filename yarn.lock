@@ -939,6 +939,39 @@
   resolved "https://registry.yarnpkg.com/@csstools/normalize.css/-/normalize.css-9.0.1.tgz#c27b391d8457d1e893f1eddeaf5e5412d12ffbb5"
   integrity sha512-6It2EVfGskxZCQhuykrfnALg7oVeiI6KclWSmGDqB0AiInVrTGB9Jp9i4/Ad21u9Jde/voVQz6eFX/eSg/UsPA==
 
+"@devexpress/dx-core@2.1.1":
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/@devexpress/dx-core/-/dx-core-2.1.1.tgz#05a372befd0ec25aea2d0be6c089178dd47c921a"
+  integrity sha512-dHuyb7cZBvYt6CrY7iL8IJZ7t6ahkzgykHE76FZHKd94tJ1GNl6jbKw5vss1kF87roGryg5jKxMNV4Mrc1uZ6Q==
+
+"@devexpress/dx-grid-core@2.1.1":
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/@devexpress/dx-grid-core/-/dx-grid-core-2.1.1.tgz#df9b81ce168bae269d0f5567546ed20f1896ab00"
+  integrity sha512-SqSZv4dLOMRios3zeU9UZB0osPRfq01B2BjTqFkH/JCdPJu7o3lXzFq98k08cOdfNUiqTHurrFk6y6/34CN5AQ==
+
+"@devexpress/dx-react-core@^2.1.1":
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/@devexpress/dx-react-core/-/dx-react-core-2.1.1.tgz#9a90bffe8a10d859a2b11c93d91c9e43a57673ca"
+  integrity sha512-RmRSMY4PvGE+76WAGMEbcMgllh9WgrchskHh8+iHcNkOFZySMmyZ3n5rqe8zkZfgbkwNOGdpccpVWsD04KC86Q==
+  dependencies:
+    "@devexpress/dx-core" "2.1.1"
+    prop-types "^15.7.2"
+
+"@devexpress/dx-react-grid-material-ui@^2.1.1":
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/@devexpress/dx-react-grid-material-ui/-/dx-react-grid-material-ui-2.1.1.tgz#b299665024a75448d0ef52f05675bfc98cc13b03"
+  integrity sha512-LWohj4xDYS9CGNg6wNMUdBm8dwZR16udWmN/coeTsjNMbBIabxqNSoBLm3Ig1fuGAHtBzq4RAOYQ6uzzDBOXPw==
+  dependencies:
+    classnames "^2.2.6"
+    prop-types "^15.7.2"
+
+"@devexpress/dx-react-grid@^2.1.1":
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/@devexpress/dx-react-grid/-/dx-react-grid-2.1.1.tgz#cc940888fb5eca03ea4ae8151676259b29edeff5"
+  integrity sha512-CJmqlShxSMynXB7O892B1FexUiU37pTRMeVU1K21czbwLLXMm52X/iM40r1PVZxpdZ5Exgly/amA3eeU5IOtsQ==
+  dependencies:
+    "@devexpress/dx-grid-core" "2.1.1"
+
 "@emotion/hash@^0.7.1":
   version "0.7.2"
   resolved "https://registry.yarnpkg.com/@emotion/hash/-/hash-0.7.2.tgz#53211e564604beb9befa7a4400ebf8147473eeef"
@@ -2680,6 +2713,11 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
+classnames@^2.2.6:
+  version "2.2.6"
+  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
+  integrity sha512-JR/iSQOSt+LQIWwrwEzJ9uk0xfN3mTVYMwt1Ir5mUcSN6pU+V4zQFFaJsclJbPuAUQH+yfWef6tm7l1quW3C8Q==
+
 clean-css@4.2.x:
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/clean-css/-/clean-css-4.2.1.tgz#2d411ef76b8569b6d0c84068dabe85b0aa5e5c17"
@@ -3901,6 +3939,11 @@ eslint-plugin-react@^7.12.4:
     object.values "^1.1.0"
     prop-types "^15.7.2"
     resolve "^1.10.1"
+
+eslint-plugin-redux-saga@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-redux-saga/-/eslint-plugin-redux-saga-1.1.1.tgz#8cf05049516aca9b9efcb1978a55991d10dceef9"
+  integrity sha512-XCXJ0VNOeqkZaKVKPKwKfPgBh8B2MIgKZ3DCIs8KxyYJgayOLTMCxYFRUZ8ElUSEa22beKyO2Ro8wtwYZspHWw==
 
 eslint-scope@3.7.1:
   version "3.7.1"
