@@ -1,10 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Paper from '@material-ui/core/Paper';
-import {
-  PagingState,
-  IntegratedPaging,
-  IntegratedSelection
-} from '@devexpress/dx-react-grid';
+import { PagingState, CustomPaging } from '@devexpress/dx-react-grid';
 import {
   Grid,
   Table,
@@ -20,8 +16,7 @@ export default data => {
           defaultCurrentPage={data.defaultCurrentPage}
           defaultPageSize={data.defaultPageSize}
         />
-        <IntegratedSelection />
-        <IntegratedPaging />
+        <CustomPaging totalCount={data.totalCount} />
         <Table />
         <TableHeaderRow />
         <PagingPanel pageSizes={data.tableConfig.PAGE_SIZES} />

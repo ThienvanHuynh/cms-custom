@@ -44,10 +44,10 @@
     "es6": true,
     "browser": true
   },
-  "extends": ["eslint:recommended", "plugin:redux-saga/recommended"],
+  "extends": ["eslint:recommended", "plugin:redux-saga/recommended", "airbnb"],
   "ecmaFeatures": {
     "jsx": true,
     "experimentalObjectRestSpread": true
   },
-  "plugins": ["react", "redux-saga"]
+  "plugins": ["react", "redux-saga", "react-hooks", "import"]
 }

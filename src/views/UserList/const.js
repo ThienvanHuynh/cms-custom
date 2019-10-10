@@ -8,3 +8,6 @@ export const tableConfig = {
   ],
   PAGE_SIZES: [5, 10, 15]
 };
+
+export const GET_LIST_USER = 'GET_LIST_USER';
+export const GET_LIST_USER_SUCCESS = 'GET_LIST_USER_SUCCESS';
