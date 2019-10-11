@@ -1,4 +1,4 @@
-import React, { useState, Fragment, useEffect } from 'react';
+import React, { Fragment, useEffect } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/styles';
@@ -6,6 +6,7 @@ import Grid from '../../../../common/gridView';
 import { tableConfig } from '../../const';
 import { SearchInput } from 'components';
 import { getListUser } from '../../action';
+import TableCell from '../configTableCell';
 const useStyles = makeStyles(theme => ({
   searchInput: {
     marginRight: theme.spacing(0)
@@ -33,6 +34,20 @@ const UsersTable = props => {
   useEffect(() => {
     getListUser();
   }, []);
+  const handleEdit = () => {
+    console.log('edit');
+  };
+  const handleDelete = () => {
+    console.log('delete');
+  };
+  const handleViewDetail = () => {
+    console.log('view');
+  };
+  const eventList = {
+    handleDetailView: handleViewDetail,
+    handleEdit: handleEdit,
+    handleDelete: handleDelete
+  };
   return (
     <Fragment>
       <div className={classes.row}>
@@ -48,6 +63,7 @@ const UsersTable = props => {
           defaultCurrentPage={0}
           tableConfig={tableConfig}
           totalCount={ListUser ? ListUser.length : 0}
+          cellComponent={props => TableCell(eventList, props)}
         />
       )}
     </Fragment>

@@ -1,6 +1,7 @@
 import { createStore, applyMiddleware, compose } from 'redux';
 import createSagaMiddleware from 'redux-saga';
 import { routerMiddleware } from 'connected-react-router';
+import { composeWithDevTools } from 'redux-devtools-extension';
 
 import rootReducer from '../reducers';
 import rootSaga from '../saga';
@@ -12,7 +13,7 @@ const storeConfig = () => {
 
   const middlewares = [sagaMiddleware, routesMiddleware];
 
-  const enhancers = [applyMiddleware(...middlewares)];
+  const enhancers = [applyMiddleware(...middlewares), composeWithDevTools()];
   let composeEnhancers = compose;
 
   const store = createStore(rootReducer(), composeEnhancers(...enhancers));

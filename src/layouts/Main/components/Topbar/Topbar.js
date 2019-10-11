@@ -7,10 +7,12 @@ import { AppBar, Toolbar, Badge, Hidden, IconButton } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 import NotificationsIcon from '@material-ui/icons/NotificationsOutlined';
 import InputIcon from '@material-ui/icons/Input';
+import { Orange } from '../../../../common/VarCom';
 
 const useStyles = makeStyles(theme => ({
   root: {
-    boxShadow: 'none'
+    boxShadow: 'none',
+    backgroundColor: Orange
   },
   flexGrow: {
     flexGrow: 1
@@ -28,16 +30,10 @@ const Topbar = props => {
   const [notifications] = useState([]);
 
   return (
-    <AppBar
-      {...rest}
-      className={clsx(classes.root, className)}
-    >
+    <AppBar {...rest} className={clsx(classes.root, className)}>
       <Toolbar>
         <RouterLink to="/">
-          <img
-            alt="Logo"
-            src="/images/logos/logo--white.svg"
-          />
+          <img alt="Logo" src="/images/logos/logo--white.svg" />
         </RouterLink>
         <div className={classes.flexGrow} />
         <Hidden mdDown>
@@ -45,23 +41,16 @@ const Topbar = props => {
             <Badge
               badgeContent={notifications.length}
               color="primary"
-              variant="dot"
-            >
+              variant="dot">
               <NotificationsIcon />
             </Badge>
           </IconButton>
-          <IconButton
-            className={classes.signOutButton}
-            color="inherit"
-          >
+          <IconButton className={classes.signOutButton} color="inherit">
             <InputIcon />
           </IconButton>
         </Hidden>
         <Hidden lgUp>
-          <IconButton
-            color="inherit"
-            onClick={onSidebarOpen}
-          >
+          <IconButton color="inherit" onClick={onSidebarOpen}>
             <MenuIcon />
           </IconButton>
         </Hidden>

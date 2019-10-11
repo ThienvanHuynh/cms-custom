@@ -7,7 +7,6 @@ const initState = fromJS({
 const reducerUser = (state = initState, action) => {
   switch (action.type) {
     case nameConst.GET_LIST_USER_SUCCESS:
-      console.log('12121211', action.payload);
       return state.set('ListUser', action.payload);
     default:
       return state;

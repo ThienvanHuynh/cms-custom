@@ -17,7 +17,7 @@ export default data => {
           defaultPageSize={data.defaultPageSize}
         />
         <CustomPaging totalCount={data.totalCount} />
-        <Table />
+        <Table cellComponent={data.cellComponent} />
         <TableHeaderRow />
         <PagingPanel pageSizes={data.tableConfig.PAGE_SIZES} />
       </Grid>
