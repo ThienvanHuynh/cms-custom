@@ -9,19 +9,22 @@ import 'react-perfect-scrollbar/dist/css/styles.css';
 import './assets/scss/index.scss';
 import Routes from './Routes';
 import store from './store/index';
+import Firebase, { FirebaseContext } from './components/Firebase';
 
 const browserHistory = createBrowserHistory();
 
 export default class App extends Component {
   render() {
     return (
-      <Provider store={store()}>
-        <ThemeProvider theme={theme}>
-          <Router history={browserHistory}>
-            <Routes />
-          </Router>
-        </ThemeProvider>
-      </Provider>
+      <FirebaseContext.Provider value={new Firebase()}>
+        <Provider store={store()}>
+          <ThemeProvider theme={theme}>
+            <Router history={browserHistory}>
+              <Routes />
+            </Router>
+          </ThemeProvider>
+        </Provider>
+      </FirebaseContext.Provider>
     );
   }
 }
