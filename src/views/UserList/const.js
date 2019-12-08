@@ -1,10 +1,12 @@
 export const tableConfig = {
   columns: [
     { name: 'index', title: 'STT' },
-    { name: 'name', title: 'Tên' },
-    { name: 'gender', title: 'Giới tính' },
-    { name: 'city', title: 'Thành Phố' },
-    { name: 'car', title: 'Loại xe' },
+    { name: 'name_id', title: 'Mã cám' },
+    { name: 'type_food', title: 'Loại thức ăn' },
+    { name: 'total', title: 'Số lượng' },
+    { name: 'date_add', title: 'Ngày nhập hàng' },
+    { name: 'price', title: 'Đơn giá' },
+    { name: 'price_total', title: 'Tổng tiền' },
     { name: 'action', title: 'Chức năng' }
   ],
   PAGE_SIZES: [5, 10, 15],

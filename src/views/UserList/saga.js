@@ -8,20 +8,7 @@ const getCategoriesCallApi = () => {
     .then(() => {
       return {
         data: [
-          { name: 'Thiện', gender: 'Male', city: 'HCM', car: 'Honda' },
-          { name: 'Thiện1', gender: 'Male', city: 'HCM1', car: 'Yamaha' },
-          { name: 'Thiện', gender: 'Male', city: 'HCM', car: 'Honda' },
-          { name: 'Thiện1', gender: 'Male', city: 'HCM1', car: 'Yamaha' },
-          { name: 'Thiện', gender: 'Male', city: 'HCM', car: 'Honda' },
-          { name: 'Thiện1', gender: 'Male', city: 'HCM1', car: 'Yamaha' },
-          { name: 'Thiện', gender: 'Male', city: 'HCM', car: 'Honda' },
-          { name: 'Thiện1', gender: 'Male', city: 'HCM1', car: 'Yamaha' },
-          { name: 'Thiện', gender: 'Male', city: 'HCM', car: 'Honda' },
-          { name: 'Thiện1', gender: 'Male', city: 'HCM1', car: 'Yamaha' },
-          { name: 'Thiện', gender: 'Male', city: 'HCM', car: 'Honda' },
-          { name: 'Thiện1', gender: 'Male', city: 'HCM1', car: 'Yamaha' },
-          { name: 'Thiện', gender: 'Male', city: 'HCM', car: 'Honda' },
-          { name: 'Thiện1', gender: 'Male', city: 'HCM1', car: 'Yamaha' }
+          { name_id: "5001S", type_food: 'Nái đẻ', total: 20, price: '3000000', price_total: '60000000', date_add: '18/12/2019' }
         ]
       };
     })

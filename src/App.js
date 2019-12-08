@@ -9,7 +9,7 @@ import 'react-perfect-scrollbar/dist/css/styles.css';
 import './assets/scss/index.scss';
 import Routes from './Routes';
 import store from './store/index';
-import Firebase, { FirebaseContext } from './components/Firebase';
+import Firebase, { FirebaseContext } from './Firebase';
 
 const browserHistory = createBrowserHistory();
 

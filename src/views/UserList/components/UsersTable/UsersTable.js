@@ -18,12 +18,14 @@ const UsersTable = props => {
   const generateRows = data => {
     if (data && data.length) {
       return data.map((item, index) => {
-        const { name, gender, city, car } = item;
+        const { name_id, type_food, total, price, price_total, date_add } = item;
         return {
-          name,
-          gender,
-          city,
-          car,
+          name_id,
+          type_food,
+          total,
+          price,
+          price_total,
+          date_add,
           index: index + 1
         };
       });
